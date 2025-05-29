@@ -25,7 +25,7 @@ A análise exploratória de dados busca responder às seguintes perguntas:
 
 ---
 
-## 🧠 Modelos de Machine Learning
+##  Modelos de Machine Learning
 
 O projeto possui três branches adicionais, cada uma implementando um modelo de classificação supervisionada:
 
@@ -42,7 +42,7 @@ O projeto possui três branches adicionais, cada uma implementando um modelo de 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Linguagem:** Python 3.x
 - **Bibliotecas:**
@@ -54,7 +54,7 @@ O projeto possui três branches adicionais, cada uma implementando um modelo de 
 
 ---
 
-## 🚀 Como Executar
+##  Como Executar
 
 1. Clone o repositório:
 

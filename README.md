@@ -29,14 +29,14 @@ A visualização de dados na `main` do projeto busca responder as seguintes perg
 
 O projeto possui três branches adicionais, cada uma com a aplicação e análise de um modelo de classificação supervisionada:
 
-- [`branch-knn`](https://github.com/seuusuario/seurepositorio/tree/branch-knn):  
+- [`branch-knn`](https://github.com/XaNd204/ML/blob/branch-KNN):  
   Classificador **KNN (K-Nearest Neighbors)** com ajuste de `k` e validação cruzada.  
   Normalização é essencial para o bom desempenho.
 
-- [`branch-svm`](https://github.com/seuusuario/seurepositorio/tree/branch-svm):  
+- [`branch-svm`](https://github.com/XaNd204/ML/blob/branch-SVM):  
   **SVM linear** com divisão treino/teste e validação cruzada.
 
-- [`branch-svm-kernel`](https://github.com/seuusuario/seurepositorio/tree/branch-svm-kernel):  
+- [`branch-svm-kernel`](https://github.com/XaNd204/ML/blob/branch-SVMwKernelTrick):  
   **SVM com kernel não-linear (RBF)** e ajuste do parâmetro `gamma`, com resultados de alta acurácia.
 
 ---

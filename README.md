@@ -57,4 +57,4 @@ O projeto possui três branches adicionais, cada uma com a aplicação e anális
 
 ```bash
 git clone https://github.com/seuusuario/seurepositorio.git
-cd seurepositorio
+cd ML

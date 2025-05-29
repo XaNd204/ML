@@ -1,53 +1,56 @@
-# 🐧 Projeto de Visualização de Dados e Classificação de Pinguins
+#  Projeto de Visualização de Dados e Classificação de Pinguins
 
-Este projeto combina **análise exploratória de dados** e **modelos de machine learning** usando o famoso conjunto de dados dos pinguins de Palmer. O objetivo é compreender melhor as características dos pinguins resgatados por uma ONG e aplicar modelos de classificação para prever suas espécies com base em medidas corporais.
+Este projeto combina **análise exploratória de dados** e **modelos de machine learning** utilizando o conjunto de dados dos pinguins de Palmer. O objetivo é compreender melhor as características dos pinguins resgatados por uma ONG e aplicar modelos de classificação para prever suas espécies com base em medidas corporais.
 
 ---
 
-## 📊 Perguntas de Pesquisa
+##  Perguntas de Pesquisa
 
-A visualização de dados na `main` do projeto busca responder as seguintes perguntas:
+A análise exploratória de dados busca responder às seguintes perguntas:
 
 1. **Quais pinguins não têm anotações?**  
-   (Dados ausentes ou incompletos por categoria)
+   (Identificação de dados ausentes ou incompletos por categoria)
 
-2. **Quais ilhas a maioria dos pinguins está vindo?**  
-   (Distribuição geográfica)
+2. **De quais ilhas a maioria dos pinguins está vindo?**  
+   (Distribuição geográfica dos pinguins)
 
 3. **Quais as espécies que a ONG mais possui?**  
    (Frequência por espécie)
 
 4. **Existe alguma relação entre as medidas do pinguim e a sua espécie?**  
-   (Visualizações comparativas de atributos como comprimento do bico, massa corporal etc.)
+   (Análise comparativa de atributos como comprimento do bico, massa corporal, etc.)
 
 5. **Existe alguma relação entre as medidas do pinguim e seu sexo para cada uma das três espécies?**  
    (Análise multivariada entre medidas e sexo dentro de cada espécie)
 
 ---
 
-## 🧠 Machine Learning
+## 🧠 Modelos de Machine Learning
 
-O projeto possui três branches adicionais, cada uma com a aplicação e análise de um modelo de classificação supervisionada:
+O projeto possui três branches adicionais, cada uma implementando um modelo de classificação supervisionada:
 
-- [`branch-knn`](https://github.com/XaNd204/ML/blob/branch-KNN):  
+- [`branch-KNN`](https://github.com/XaNd204/ML/tree/branch-KNN):  
   Classificador **KNN (K-Nearest Neighbors)** com ajuste de `k` e validação cruzada.  
-  Normalização é essencial para o bom desempenho.
+  > ⚠️ *Nota: A normalização dos dados é essencial para o bom desempenho deste modelo.*
 
-- [`branch-svm`](https://github.com/XaNd204/ML/blob/branch-SVM):  
-  **SVM linear** com divisão treino/teste e validação cruzada.
+- [`branch-SVM`](https://github.com/XaNd204/ML/tree/branch-SVM):  
+  **SVM linear**, com divisão treino/teste e validação cruzada.
 
-- [`branch-svm-kernel`](https://github.com/XaNd204/ML/blob/branch-SVMwKernelTrick):  
-  **SVM com kernel não-linear (RBF)** e ajuste do parâmetro `gamma`, com resultados de alta acurácia.
+- [`branch-SVMwKernelTrick`](https://github.com/XaNd204/ML/tree/branch-SVMwKernelTrick):  
+  **SVM com kernel não-linear (RBF)** e ajuste do parâmetro `gamma`.  
+  Resultados com alta acurácia e excelente generalização.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn (SVM, KNN, validação cruzada)
-- Jupyter Notebook
+- **Linguagem:** Python 3.x
+- **Bibliotecas:**
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
 
 ---
 
@@ -56,5 +59,5 @@ O projeto possui três branches adicionais, cada uma com a aplicação e anális
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seuusuario/seurepositorio.git
+git clone https://github.com/XaNd204/ML.git
 cd ML

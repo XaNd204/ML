@@ -1,4 +1,4 @@
-#  Análise e Classificação de Espécies de Pinguins de Palmer
+# Análise e Classificação de Espécies de Pinguins de Palmer
 
 Este projeto realiza uma análise exploratória de dados e implementa modelos de Machine Learning para classificar espécies de pinguins com base em suas medidas corporais. O trabalho utiliza o famoso conjunto de dados **Palmer Penguins**.
 
@@ -6,10 +6,9 @@ O objetivo é duplo:
 1.  **Análise Exploratória:** Entender as características das diferentes espécies de pinguins, suas distribuições geográficas e as relações entre suas medidas.
 2.  **Modelagem Preditiva:** Construir e avaliar três modelos de classificação supervisionada (KNN, SVM Linear e SVM com Kernel RBF) para prever a espécie de um pinguim.
 
-![Exemplo de Pairplot mostrando a relação entre as medidas](caminho/para/seu_grafico_pairplot.png)
-_Sugestão: Insira aqui um gráfico do seu projeto e atualize o caminho._
+![Exemplo de Pairplot mostrando a relação entre as medidas]("D:\GitHub Repositórios\ML\images\pairplot_hue=espece.png")
 
-## 🔬 Perguntas de Pesquisa
+## Perguntas de Pesquisa
 
 A análise exploratória foi guiada pelas seguintes questões:
 
@@ -19,7 +18,7 @@ A análise exploratória foi guiada pelas seguintes questões:
 4.  **Medidas vs. Espécie:** Existe uma correlação visível entre as medidas corporais (comprimento e profundidade do bico, comprimento da nadadeira, massa) e a espécie do pinguim?
 5.  **Medidas vs. Sexo:** Como as medidas corporais variam entre machos e fêmeas dentro de cada espécie?
 
-## 🤖 Modelos de Machine Learning
+## Modelos de Machine Learning
 
 O projeto explora três algoritmos de classificação. Cada modelo está implementado em uma `branch` separada para melhor organização. A análise exploratória principal se encontra na branch `main`.
 
@@ -27,7 +26,7 @@ O projeto explora três algoritmos de classificação. Cada modelo está impleme
 * `branch-SVM`: Implementação de um **Support Vector Machine (SVM) com kernel linear**.
 * `branch-SVMwKernelTrick`: Implementação de um **SVM com kernel não-linear (RBF)**, que se mostrou o modelo de melhor performance, com excelente capacidade de generalização.
 
-### 📊 Resultados Comparativos
+### Resultados Comparativos
 
 A tabela abaixo resume a performance dos modelos no conjunto de teste:
 

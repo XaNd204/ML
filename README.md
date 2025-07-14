@@ -1,75 +1,56 @@
-# Projeto de Visualização de Dados e Classificação de Pinguins
+#  Análise e Classificação de Espécies de Pinguins de Palmer
 
-Este projeto combina **análise exploratória de dados** e **modelos de machine learning** utilizando o conjunto de dados dos pinguins de Palmer. O objetivo é compreender melhor as características dos pinguins resgatados por uma ONG e aplicar modelos de classificação para prever suas espécies com base em medidas corporais.
+Este projeto realiza uma análise exploratória de dados e implementa modelos de Machine Learning para classificar espécies de pinguins com base em suas medidas corporais. O trabalho utiliza o famoso conjunto de dados **Palmer Penguins**.
 
----
+O objetivo é duplo:
+1.  **Análise Exploratória:** Entender as características das diferentes espécies de pinguins, suas distribuições geográficas e as relações entre suas medidas.
+2.  **Modelagem Preditiva:** Construir e avaliar três modelos de classificação supervisionada (KNN, SVM Linear e SVM com Kernel RBF) para prever a espécie de um pinguim.
 
-## Perguntas de Pesquisa
+![Exemplo de Pairplot mostrando a relação entre as medidas](caminho/para/seu_grafico_pairplot.png)
+_Sugestão: Insira aqui um gráfico do seu projeto e atualize o caminho._
 
-A análise exploratória de dados busca responder às seguintes perguntas:
+## 🔬 Perguntas de Pesquisa
 
-* Quais pinguins não têm anotações? (Identificação de dados ausentes ou incompletos por categoria)
-* De quais ilhas a maioria dos pinguins está vindo? (Distribuição geográfica dos pinguins)
-* Quais as espécies que a ONG mais possui? (Frequência por espécie)
-* Existe alguma relação entre as medidas do pinguim e a sua espécie? (Análise comparativa de atributos como comprimento do bico, massa corporal, etc.)
-* Existe alguma relação entre as medidas do pinguim e seu sexo para cada uma das três espécies? (Análise multivariada entre medidas e sexo dentro de cada espécie)
+A análise exploratória foi guiada pelas seguintes questões:
 
----
+1.  **Dados Ausentes:** Quais são as características com dados faltantes e em que quantidade?
+2.  **Distribuição Geográfica:** Qual a distribuição das espécies de pinguins por ilha?
+3.  **Frequência das Espécies:** Qual a espécie mais comum no conjunto de dados?
+4.  **Medidas vs. Espécie:** Existe uma correlação visível entre as medidas corporais (comprimento e profundidade do bico, comprimento da nadadeira, massa) e a espécie do pinguim?
+5.  **Medidas vs. Sexo:** Como as medidas corporais variam entre machos e fêmeas dentro de cada espécie?
 
-## Modelos de Machine Learning
+## 🤖 Modelos de Machine Learning
 
-O projeto possui três branches adicionais, cada uma implementando um modelo de classificação supervisionada:
+O projeto explora três algoritmos de classificação. Cada modelo está implementado em uma `branch` separada para melhor organização. A análise exploratória principal se encontra na branch `main`.
 
-### [`branch-KNN`](https://github.com/XaNd204/ML/tree/branch-KNN): 
-* Classificador **KNN (K-Nearest Neighbors)** com ajuste de `k` e validação cruzada.
-* **Nota:** A normalização dos dados é essencial para o bom desempenho deste modelo.
+* `branch-KNN`: Implementação do classificador **K-Nearest Neighbors (KNN)**. Inclui ajuste de hiperparâmetros (`k`) com validação cruzada. A normalização dos dados foi um passo crucial para a performance deste modelo.
+* `branch-SVM`: Implementação de um **Support Vector Machine (SVM) com kernel linear**.
+* `branch-SVMwKernelTrick`: Implementação de um **SVM com kernel não-linear (RBF)**, que se mostrou o modelo de melhor performance, com excelente capacidade de generalização.
 
-### [`branch-SVM`](https://github.com/XaNd204/ML/tree/branch-SVM): 
-* **SVM linear**, com divisão treino/teste e validação cruzada.
+### 📊 Resultados Comparativos
 
-### [`branch-SVMwKernelTrick`](https://github.com/XaNd204/ML/tree/branch-SVMwKernelTrick):  
-* **SVM com kernel não-linear (RBF)** e ajuste do parâmetro `gamma`.
-* Resultados com alta acurácia e excelente generalização.
+A tabela abaixo resume a performance dos modelos no conjunto de teste:
 
----
+| Modelo             | Acurácia | Precisão (Média Ponderada) |
+| :----------------- | :------: | :------------------------: |
+| KNN (k=5)          |   0.96   |            0.96            |
+| SVM Linear         |   0.98   |            0.98            |
+| **SVM (Kernel RBF)** | **0.99** |          **0.99** |
 
-## Tecnologias Utilizadas
 
-* **Linguagem:** Python 3.x
-* **Bibliotecas:**
-    * pandas
-    * numpy
-    * matplotlib
-    * seaborn
-    * scikit-learn
+## 🛠️ Tecnologias Utilizadas
 
----
+* **Linguagem:** Python 3.9+
+* **Bibliotecas Principais:**
+    * `pandas`
+    * `numpy`
+    * `matplotlib`
+    * `seaborn`
+    * `scikit-learn`
 
-## Como Executar
+## 🚀 Como Executar
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/XaNd204/ML.git](https://github.com/XaNd204/ML.git)
-    ```
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd ML
-    ```
-3.  **Instale as dependências (recomendado criar um ambiente virtual):**
-    ```bash
-    pip install pandas numpy matplotlib seaborn scikit-learn
-    ```
-4.  **Para rodar um modelo específico, mude para a branch correspondente:**
-    * Para KNN:
-        ```bash
-        git checkout branch-KNN
-        ```
-    * Para SVM Linear:
-        ```bash
-        git checkout branch-SVM
-        ```
-    * Para SVM com Kernel RBF:
-        ```bash
-        git checkout branch-SVMwKernelTrick
-        ```
-5.  **Execute o script Python principal da análise ou do modelo desejado.** (Ex: `python nome_do_script.py`)
+**1. Clone o Repositório**
+```bash
+git clone [https://github.com/XaNd204/ML.git](https://github.com/XaNd204/ML.git)
+cd ML

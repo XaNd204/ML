@@ -6,7 +6,7 @@ O objetivo é duplo:
 1.  **Análise Exploratória:** Entender as características das diferentes espécies de pinguins, suas distribuições geográficas e as relações entre suas medidas.
 2.  **Modelagem Preditiva:** Construir e avaliar três modelos de classificação supervisionada (KNN, SVM Linear e SVM com Kernel RBF) para prever a espécie de um pinguim.
 
-![Exemplo de Pairplot mostrando a relação entre as medidas](images\pairplot_hue=espece.png")
+![Exemplo de Pairplot mostrando a relação entre as medidas](images/pairplot_hue=espece.png)
 
 ##  Perguntas de Pesquisa
 
@@ -32,9 +32,9 @@ A tabela abaixo resume a performance dos modelos no conjunto de teste:
 
 | Modelo             | Acurácia | Precisão (Média Ponderada) |
 | :----------------- | :------: | :------------------------: |
-| KNN (k=5)          |   0.96   |            0.96            |
-| SVM Linear         |   0.98   |            0.98            |
-| **SVM (Kernel RBF)** | **0.99** |          **0.99** |
+| KNN (k=5)          |   0.98   |            0.9880            |
+| SVM Linear         |   0.99   |            0.9819            |
+| **SVM (Kernel RBF)** | **0.99** |          **0.9820** |
 
 
 ##  Tecnologias Utilizadas

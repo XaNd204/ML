@@ -6,7 +6,7 @@ O objetivo é duplo:
 1.  **Análise Exploratória:** Entender as características das diferentes espécies de pinguins, suas distribuições geográficas e as relações entre suas medidas.
 2.  **Modelagem Preditiva:** Construir e avaliar três modelos de classificação supervisionada (KNN, SVM Linear e SVM com Kernel RBF) para prever a espécie de um pinguim.
 
-![Exemplo de Pairplot mostrando a relação entre as medidas](images/Gráfico espécies.png)
+![Exemplo de Pairplot mostrando a relação entre as medidas](images/grafico_especes.png)
 
 ##  Perguntas de Pesquisa
 

@@ -51,5 +51,4 @@ A tabela abaixo resume a performance dos modelos no conjunto de teste:
 
 **1. Clone o Repositório**
 ```bash
-git clone [https://github.com/XaNd204/ML.git](https://github.com/XaNd204/ML.git)
-cd ML
+git clone https://github.com/XaNd204/ML.git && cd ML
